@@ -8,6 +8,7 @@ import Socios from "./pages/Socios";
 import Actividades from "./pages/Actividades";
 import Tesoreria from "./pages/Tesoreria";
 
+
 const App = () => {
   return (
     <div>
