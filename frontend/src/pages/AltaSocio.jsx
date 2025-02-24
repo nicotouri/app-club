@@ -99,6 +99,15 @@ const AltaSocio = () => {
               </div>
             </fieldset>
 
+            {/* Sección: Contacto */}
+            <fieldset className="border p-4 rounded-lg">
+              <legend className="text-lg font-semibold text-blue-600">Contacto</legend>
+              <div className="grid grid-cols-2 gap-4 mt-2">
+                <input type="text" name="telefonoCelular" placeholder="Teléfono Celular" value={nuevoSocio.telefonoCelular} onChange={handleChange} className="w-full p-2 border rounded" />
+                <input type="text" name="telefonoFijo" placeholder="Teléfono Fijo" value={nuevoSocio.telefonoFijo} onChange={handleChange} className="w-full p-2 border rounded" />
+              </div>
+            </fieldset>
+
             {/* Sección: Dirección */}
             <fieldset className="border p-4 rounded-lg">
               <legend className="text-lg font-semibold text-blue-600">Dirección</legend>
@@ -116,21 +125,6 @@ const AltaSocio = () => {
               <div className="grid grid-cols-2 gap-4 mt-2">
                 <input type="text" name="obraSocial" placeholder="Obra Social" value={nuevoSocio.obraSocial} onChange={handleChange} className="w-full p-2 border rounded" />
                 <input type="text" name="numeroAfiliado" placeholder="Número de Afiliado" value={nuevoSocio.numeroAfiliado} onChange={handleChange} className="w-full p-2 border rounded" />
-              </div>
-            </fieldset>
-
-            {/* Sección: Documentos */}
-            <fieldset className="border p-4 rounded-lg">
-              <legend className="text-lg font-semibold text-blue-600">Documentos</legend>
-              <div className="grid grid-cols-2 gap-4 mt-2">
-                <label className="block">
-                  <span className="text-gray-700">Foto:</span>
-                  <input type="file" name="foto" onChange={handleChange} className="w-full p-2 border rounded" />
-                </label>
-                <label className="block">
-                  <span className="text-gray-700">Documentación:</span>
-                  <input type="file" name="documentacion" onChange={handleChange} className="w-full p-2 border rounded" />
-                </label>
               </div>
             </fieldset>
 
