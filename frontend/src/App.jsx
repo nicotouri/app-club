@@ -7,7 +7,8 @@ import Dashboard from "./pages/Dashboard";
 import Socios from "./pages/Socios";
 import Actividades from "./pages/Actividades";
 import Tesoreria from "./pages/Tesoreria";
-
+import AltaSocio from "./pages/AltaSocio";
+import ConsultaSocios from "./pages/ConsultaSocios";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
         <Route path="/socios" element={<Socios />} />
         <Route path="/actividades" element={<Actividades />} />
         <Route path="/tesoreria" element={<Tesoreria />} />
+        <Route path="/alta-socio" element={<AltaSocio />} />
+        <Route path="/consulta-socios" element={<ConsultaSocios />} />
       </Routes>
     </div>
   );
